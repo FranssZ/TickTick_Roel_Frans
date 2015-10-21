@@ -9,7 +9,7 @@ class TickTick : GameEnvironment
         game.Run();
     }
 
-    public TickTick()
+    public TickTick() //ticktick
     {
         Content.RootDirectory = "Content";
         this.IsMouseVisible = true;
