@@ -5,6 +5,7 @@ class TickTick : GameEnvironment
 {
     static void Main()
     {
+        // ik ben main ticktick
         TickTick game = new TickTick();
         game.Run();
     }
