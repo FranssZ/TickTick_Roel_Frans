@@ -4,3 +4,9 @@ A:\Documents\Visual Studio 2013\Projects\TickTick\GameManagement\obj\x86\Debug\G
 A:\Documents\Visual Studio 2013\Projects\TickTick\GameManagement\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 A:\Documents\Visual Studio 2013\Projects\TickTick\GameManagement\obj\x86\Debug\GameManagement.dll
 A:\Documents\Visual Studio 2013\Projects\TickTick\GameManagement\obj\x86\Debug\GameManagement.pdb
+A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\GameManagement\bin\x86\Debug\GameManagement.dll
+A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\GameManagement\bin\x86\Debug\GameManagement.pdb
+A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\GameManagement\obj\x86\Debug\GameManagement.csprojResolveAssemblyReference.cache
+A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\GameManagement\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\GameManagement\obj\x86\Debug\GameManagement.dll
+A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\GameManagement\obj\x86\Debug\GameManagement.pdb
