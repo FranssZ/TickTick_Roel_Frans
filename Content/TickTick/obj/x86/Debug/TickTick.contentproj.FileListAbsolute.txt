@@ -1,2 +1,3 @@
 A:\Documents\Visual Studio 2013\Projects\TickTick\Content\TickTick\obj\x86\Debug\TickTick.contentprojResolveAssemblyReference.cache
 A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\Content\TickTick\obj\x86\Debug\TickTick.contentprojResolveAssemblyReference.cache
+D:\studie\gameprogrammeren\TickTick_Roel_Frans\Content\TickTick\obj\x86\Debug\TickTick.contentprojResolveAssemblyReference.cache

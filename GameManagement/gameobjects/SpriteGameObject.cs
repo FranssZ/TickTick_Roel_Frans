@@ -4,12 +4,14 @@ using Microsoft.Xna.Framework.Graphics;
 
 public class SpriteGameObject : GameObject
 {
+    GameManagement.Camera camera;
     protected SpriteSheet sprite;
     protected Vector2 origin;
 
     public SpriteGameObject(string assetname, int layer = 0, string id = "", int sheetIndex = 0)
         : base(layer, id)
     {
+        
         if (assetname != "")
             sprite = new SpriteSheet(assetname, sheetIndex);
         else
@@ -20,7 +22,8 @@ public class SpriteGameObject : GameObject
     {
         if (!visible || sprite == null)
             return;
-        sprite.Draw(spriteBatch, this.GlobalPosition, origin);
+        camera = new GameManagement.Camera();
+        sprite.Draw(spriteBatch, this.GlobalPosition + camera.camerapositie, origin);
     }
 
     public SpriteSheet Sprite
