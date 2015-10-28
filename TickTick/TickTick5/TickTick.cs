@@ -5,12 +5,11 @@ class TickTick : GameEnvironment
 {
     static void Main()
     {
-        // ik ben main ticktick
         TickTick game = new TickTick();
         game.Run();
     }
 
-    public TickTick() //ticktick
+    public TickTick() 
     {
         Content.RootDirectory = "Content";
         this.IsMouseVisible = true;
