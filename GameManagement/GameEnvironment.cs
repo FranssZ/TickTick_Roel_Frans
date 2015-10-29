@@ -16,14 +16,16 @@ public class GameEnvironment : Game
     protected static AssetManager assetManager;
     protected static GameSettingsManager gameSettingsManager;
 
+    public static GameManagement.Camera camera;
+
     public GameEnvironment()
     {
         graphics = new GraphicsDeviceManager(this);
-
         inputHelper = new InputHelper();
         gameStateManager = new GameStateManager();
         spriteScale = Matrix.CreateScale(1, 1, 1);
         random = new Random();
+        camera = new GameManagement.Camera();
         assetManager = new AssetManager(Content);
         gameSettingsManager = new GameSettingsManager();
     }
@@ -107,7 +109,7 @@ public class GameEnvironment : Game
     {
         GraphicsDevice.Clear(Color.Black);
         spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null, spriteScale);
-        gameStateManager.Draw(gameTime, spriteBatch);
+        gameStateManager.Draw(gameTime, spriteBatch /*camera.camerapositie*/);
         spriteBatch.End();
     }
 }

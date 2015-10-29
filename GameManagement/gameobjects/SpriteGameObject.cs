@@ -4,7 +4,8 @@ using Microsoft.Xna.Framework.Graphics;
 
 public class SpriteGameObject : GameObject
 {
-    GameManagement.Camera camera;
+    
+    public Vector2 cameraposition;
     protected SpriteSheet sprite;
     protected Vector2 origin;
 
@@ -18,14 +19,22 @@ public class SpriteGameObject : GameObject
             sprite = null;
     }    
 
+    
+
     public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
+
         if (!visible || sprite == null)
             return;
-        camera = new GameManagement.Camera();
-        sprite.Draw(spriteBatch, this.GlobalPosition + camera.camerapositie, origin);
+
+        //
+        //
+
+        sprite.Draw(gameTime, cameraposition, origin )
+        sprite.Draw(spriteBatch, this.GlobalPosition, origin);
     }
 
+    
     public SpriteSheet Sprite
     {
         get { return sprite; }

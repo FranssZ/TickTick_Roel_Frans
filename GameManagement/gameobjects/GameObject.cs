@@ -25,9 +25,10 @@ public abstract class GameObject : IGameLoopObject
 
     public virtual void Update(GameTime gameTime)
     {
+        
         Vector2 Velocity = velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
         position += Velocity;
-        camera.camerabeweegcheck(position,Velocity);
+        
     }
 
     public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)

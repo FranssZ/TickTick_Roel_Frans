@@ -2,27 +2,36 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-<<<<<<< HEAD
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-=======
->>>>>>> origin/master
+
 
 namespace GameManagement
 {
-    class Camera
+    public class Camera
     {
-<<<<<<< HEAD
+
         public Vector2 camerapositie = new Vector2(0,0);
 
         public void camerabeweegcheck(Vector2 position,Vector2 velocity)
         {
             //check position en camerapositie meer dan iets
+            if (position.X - camerapositie.X <= 200)   //linkerkant
+            {
+                camerapositie.X += 10;
+                //Console.WriteLine("iets");
+            }
+            if (position.X - camerapositie.X >= 600) //rechterkant
+            {
+                camerapositie.X += 10;
+            }
+
 
         }
 
-=======
+
         //hier moet komen wat besluit wat we zien
->>>>>>> origin/master
+
     }
 }

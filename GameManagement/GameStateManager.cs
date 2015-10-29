@@ -57,6 +57,12 @@ public class GameStateManager : IGameLoopObject
             currentGameState.Draw(gameTime, spriteBatch);
     }
 
+    public void Draw(GameTime gameTime, SpriteBatch spriteBatch, GameManagement.Camera cam)
+    {
+        if (currentGameState != null)
+            currentGameState.Draw(gameTime, spriteBatch);
+    }
+
     public void Reset()
     {
         if (currentGameState != null)

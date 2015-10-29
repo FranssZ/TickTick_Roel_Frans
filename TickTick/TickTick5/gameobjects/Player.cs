@@ -59,8 +59,9 @@ partial class Player : AnimatedGameObject
     }
 
     public override void Update(GameTime gameTime)
-    {
+    {       
         base.Update(gameTime);
+        GameEnvironment.camera.camerabeweegcheck(position, Velocity);
         if (!finished && isAlive)
         {
             if (isOnTheGround)
