@@ -12,7 +12,7 @@ public class SpriteGameObject : GameObject
     public SpriteGameObject(string assetname, int layer = 0, string id = "", int sheetIndex = 0)
         : base(layer, id)
     {
-        
+       
         if (assetname != "")
             sprite = new SpriteSheet(assetname, sheetIndex);
         else
@@ -27,11 +27,9 @@ public class SpriteGameObject : GameObject
         if (!visible || sprite == null)
             return;
 
-        //
-        //
-
-        sprite.Draw(gameTime, cameraposition, origin )
-        sprite.Draw(spriteBatch, this.GlobalPosition, origin);
+        cameraposition = GameEnvironment.camerapositieGE;
+        //if (spriteBatch == )
+        sprite.Draw(spriteBatch, this.GlobalPosition + cameraposition, origin);
     }
 
     

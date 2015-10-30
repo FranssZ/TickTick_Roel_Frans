@@ -43,12 +43,12 @@ Content\Sprites\spr_button_back.xnb
 Content\Sprites\spr_level_locked.xnb
 Content\Sprites\spr_level_solved.xnb
 Content\Sprites\spr_level_unsolved.xnb
-Content\Sprites\spr_button_quit.xnb
 Content\Backgrounds\spr_title.xnb
 Content\Overlays\spr_gameover.xnb
 Content\Overlays\spr_welldone.xnb
 Content\Overlays\spr_frame_hint.xnb
 Content\Sounds\snd_music.xnb
+Content\Sprites\spr_button_quitt.xnb
 Content\Sounds\snd_music.wma
 Content\Levels\1.txt
 Content\Levels\8.txt

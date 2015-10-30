@@ -11,25 +11,23 @@ namespace GameManagement
 {
     public class Camera
     {
-
+       
         public Vector2 camerapositie = new Vector2(0,0);
 
-        public void camerabeweegcheck(Vector2 position,Vector2 velocity)
+        public void camerabeweegcheck(Vector2 position)
         {
             //check position en camerapositie meer dan iets
-            if (position.X - camerapositie.X <= 200)   //linkerkant
+            if (position.X + camerapositie.X <= 400 && camerapositie.X < 0)   //linkerkant
             {
-                camerapositie.X += 10;
-                //Console.WriteLine("iets");
+                camerapositie.X += 8;
+                
             }
-            if (position.X - camerapositie.X >= 600) //rechterkant
+            if (position.X + camerapositie.X >= 1040) //rechterkant
             {
-                camerapositie.X += 10;
+                camerapositie.X -= 8;
             }
-
-
         }
-
+        
 
         //hier moet komen wat besluit wat we zien
 

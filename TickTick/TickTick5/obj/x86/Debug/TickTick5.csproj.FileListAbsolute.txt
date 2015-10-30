@@ -114,7 +114,6 @@ A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\T
 A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_locked.xnb
 A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_solved.xnb
 A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_unsolved.xnb
-A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_quit.xnb
 A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_title.xnb
 A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Overlays\spr_gameover.xnb
 A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Overlays\spr_welldone.xnb
@@ -211,3 +210,4 @@ D:\studie\gameprogrammeren\TickTick_Roel_Frans\TickTick\TickTick5\obj\x86\Debug\
 D:\studie\gameprogrammeren\TickTick_Roel_Frans\TickTick\TickTick5\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\studie\gameprogrammeren\TickTick_Roel_Frans\TickTick\TickTick5\obj\x86\Debug\TickTick.exe
 D:\studie\gameprogrammeren\TickTick_Roel_Frans\TickTick\TickTick5\obj\x86\Debug\TickTick.pdb
+A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_quitt.xnb

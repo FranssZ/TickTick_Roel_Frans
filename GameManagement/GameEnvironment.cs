@@ -17,17 +17,21 @@ public class GameEnvironment : Game
     protected static GameSettingsManager gameSettingsManager;
 
     public static GameManagement.Camera camera;
+    public static Vector2 camerapositieGE;
 
     public GameEnvironment()
     {
+        
         graphics = new GraphicsDeviceManager(this);
         inputHelper = new InputHelper();
         gameStateManager = new GameStateManager();
         spriteScale = Matrix.CreateScale(1, 1, 1);
         random = new Random();
         camera = new GameManagement.Camera();
+        camerapositieGE = camera.camerapositie;
         assetManager = new AssetManager(Content);
         gameSettingsManager = new GameSettingsManager();
+        
     }
 
     public static Point Screen
@@ -103,13 +107,14 @@ public class GameEnvironment : Game
     {
         HandleInput();
         gameStateManager.Update(gameTime);
+        camerapositieGE = camera.camerapositie;
     }
 
     protected override void Draw(GameTime gameTime)
     {
         GraphicsDevice.Clear(Color.Black);
         spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null, spriteScale);
-        gameStateManager.Draw(gameTime, spriteBatch /*camera.camerapositie*/);
+        gameStateManager.Draw(gameTime, spriteBatch);
         spriteBatch.End();
     }
 }
