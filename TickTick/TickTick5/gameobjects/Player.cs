@@ -11,6 +11,8 @@ partial class Player : AnimatedGameObject
     protected bool exploded;
     protected bool finished;
     protected bool walkingOnIce, walkingOnHot;
+    
+    
 
     public Player(Vector2 start) : base(0, "player")
     {
@@ -19,7 +21,8 @@ partial class Player : AnimatedGameObject
         this.LoadAnimation("Sprites/Player/spr_jump@14", "jump", false, 0.05f); 
         this.LoadAnimation("Sprites/Player/spr_celebrate@14", "celebrate", false, 0.05f);
         this.LoadAnimation("Sprites/Player/spr_die@5", "die", false);
-        this.LoadAnimation("Sprites/Player/spr_explode@5x5", "explode", false, 0.04f); 
+        this.LoadAnimation("Sprites/Player/spr_explode@5x5", "explode", false, 0.04f);
+        
 
         startPosition = start;
         Reset();
@@ -30,13 +33,14 @@ partial class Player : AnimatedGameObject
         this.position = startPosition;
         this.velocity = Vector2.Zero;
         isOnTheGround = true;
-        isAlive = true;
+        isAlive = true;        
         exploded = false;
         finished = false;
         walkingOnIce = false;
         walkingOnHot = false;
         this.PlayAnimation("idle");
         previousYPosition = BoundingBox.Bottom;
+        
     }
 
     public override void HandleInput(InputHelper inputHelper)
@@ -54,14 +58,18 @@ partial class Player : AnimatedGameObject
             velocity.X = 0.0f;
         if (velocity.X != 0.0f)
             Mirror = velocity.X < 0;
-        if ((inputHelper.KeyPressed(Keys.Space) || inputHelper.KeyPressed(Keys.Up)) && isOnTheGround)
+        if ((inputHelper.KeyPressed(Keys.Up)) && isOnTheGround)
             Jump();
+        
+
     }
 
     public override void Update(GameTime gameTime)
     {       
         base.Update(gameTime);
         GameEnvironment.camera.camerabeweegcheck(position);
+        
+
         if (!finished && isAlive)
         {
             if (isOnTheGround)
