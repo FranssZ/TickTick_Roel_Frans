@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System;
 using Microsoft.Xna.Framework;
 
 partial class Level : GameObjectList
@@ -16,7 +17,7 @@ partial class Level : GameObjectList
             textlines.Add(line);
             line = fileReader.ReadLine();
         }
-        TileField tiles = new TileField(textlines.Count - 1, width, 1, "tiles");
+        TileField tiles = new TileField(textlines.Count - 2, width, 1, "tiles");
 
         GameObjectList hintfield = new GameObjectList(100);
         this.Add(hintfield);
@@ -26,18 +27,21 @@ partial class Level : GameObjectList
         hint_frame.Meebewegen();
         hintfield.Add(hint_frame);
         TextGameObject hintText = new TextGameObject("Fonts/HintFont", 2);
-        hintText.Text = textlines[textlines.Count - 1];
+        hintText.Text = textlines[textlines.Count - 2];
         hintText.Position = new Vector2(120, 25);
         hintText.Color = Color.Black;
         hintfield.Add(hintText);
         VisibilityTimer hintTimer = new VisibilityTimer(hintfield, 1, "hintTimer");
         this.Add(hintTimer);
 
+        GameObject.lvltimer = Convert.ToDouble(textlines[textlines.Count - 1]); // de laatste lijn in de textfile heeft de tijd
+        Console.WriteLine(lvltimer);
+
         this.Add(tiles);
         tiles.CellWidth = 72;
         tiles.CellHeight = 55;
         for (int x = 0; x < width; ++x)
-            for (int y = 0; y < textlines.Count - 1; ++y)
+            for (int y = 0; y < textlines.Count - 2; ++y)
             {
                 Tile t = LoadTile(textlines[y][x], x, y);
                 tiles.Add(t, x, y);

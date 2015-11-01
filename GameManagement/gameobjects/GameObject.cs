@@ -9,10 +9,12 @@ public abstract class GameObject : IGameLoopObject
     protected int layer;
     protected string id;
     protected bool visible,meebewegen = false;
+    protected static double lvltimer=30;
     
 
     public GameObject(int layer = 0, string id = "")
     {
+        
         this.layer = layer;
         this.id = id;
         this.position = Vector2.Zero;
