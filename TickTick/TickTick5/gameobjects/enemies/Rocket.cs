@@ -1,12 +1,14 @@
 ﻿using Microsoft.Xna.Framework;
-
+using System;
 class Rocket : AnimatedGameObject
 {
+    
     protected double spawnTime;
     protected Vector2 startPosition;
 
     public Rocket(bool moveToLeft, Vector2 startPosition)
     {
+        
         this.LoadAnimation("Sprites/Rocket/spr_rocket@3", "default", true, 0.2f);
         this.PlayAnimation("default");
         this.Mirror = moveToLeft;
@@ -45,6 +47,11 @@ class Rocket : AnimatedGameObject
     {
         Player player = GameWorld.Find("player") as Player;
         if (this.CollidesWith(player) && this.Visible)
-            player.Die(false);
+            if (Player.BottomPosition-30 <= this.BoundingBox.Top)
+            {
+                this.Reset();
+            }
+            else { player.Die(false); }
     }
+
 }

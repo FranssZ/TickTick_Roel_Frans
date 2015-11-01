@@ -6,7 +6,8 @@ partial class Player : AnimatedGameObject
 {
     protected Vector2 startPosition;
     protected bool isOnTheGround;
-    protected float previousYPosition;
+    public static float previousYPosition;
+    public static float BottomPosition;
     protected bool isAlive;
     protected bool exploded;
     protected bool finished;
@@ -67,6 +68,7 @@ partial class Player : AnimatedGameObject
     public override void Update(GameTime gameTime)
     {       
         base.Update(gameTime);
+        
         GameEnvironment.camera.camerabeweegcheck(position);
         
 
@@ -92,8 +94,8 @@ partial class Player : AnimatedGameObject
             if (BoundingBox.Top >= tiles.Rows * tiles.CellHeight)
                 this.Die(true);
         }
-
         DoPhysics();
+        BottomPosition = BoundingBox.Bottom;
     }
 
     public void Explode()
