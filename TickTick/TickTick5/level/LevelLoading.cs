@@ -35,8 +35,7 @@ partial class Level : GameObjectList
         this.Add(hintTimer);
 
         GameObject.lvltimer = Convert.ToDouble(textlines[textlines.Count - 1]); // de laatste lijn in de textfile heeft de tijd
-        Console.WriteLine(lvltimer);
-
+        
         this.Add(tiles);
         tiles.CellWidth = 72;
         tiles.CellHeight = 55;

@@ -35,7 +35,6 @@ class TimerGameObject : TextGameObject
     {
         base.Reset();
         this.timeLeft = TimeSpan.FromMinutes(lvltimer/60);
-        Console.WriteLine(lvltimer);
         this.running = true;
     }
 
