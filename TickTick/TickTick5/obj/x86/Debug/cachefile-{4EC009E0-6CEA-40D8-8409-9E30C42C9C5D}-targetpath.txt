@@ -49,7 +49,7 @@ Content\Overlays\spr_welldone.xnb
 Content\Overlays\spr_frame_hint.xnb
 Content\Sounds\snd_music.xnb
 Content\Sounds\snd_music.wma
-Content\Sprites\spr_button_quitt.xnb
+Content\Sprites\spr_button_quit.xnb
 Content\Levels\1.txt
 Content\Levels\8.txt
 Content\Levels\2.txt

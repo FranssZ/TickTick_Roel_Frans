@@ -3,11 +3,13 @@
 class Button : SpriteGameObject
 {
     protected bool pressed;
+   
 
     public Button(string imageAsset, int layer = 0, string id = "")
         : base(imageAsset, layer, id)
     {
         pressed = false;
+        meebewegen = true;
     }
 
     public override void HandleInput(InputHelper inputHelper)

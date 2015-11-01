@@ -17,9 +17,12 @@ public class SpriteGameObject : GameObject
             sprite = new SpriteSheet(assetname, sheetIndex);
         else
             sprite = null;
-    }    
+    }
 
-    
+    public void Meebewegen()
+    {
+        this.meebewegen = true;
+    }
 
     public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
@@ -28,7 +31,7 @@ public class SpriteGameObject : GameObject
             return;
 
         cameraposition = GameEnvironment.camerapositieGE;
-        //if (spriteBatch == )
+        if (meebewegen) { cameraposition = new Vector2(0, 0); }
         sprite.Draw(spriteBatch, this.GlobalPosition + cameraposition, origin);
     }
 

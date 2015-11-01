@@ -453,12 +453,12 @@
       <Time>2013-04-22T15:05:50+02:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\spr_button_quitt.png</Source>
-      <Name>Sprites\spr_button_quitt</Name>
+      <Source>Sprites\spr_button_quit.png</Source>
+      <Name>Sprites\spr_button_quit</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_quitt.xnb</Output>
+      <Output>A:\Documents\Visual Studio 2013\Projects\TickTick\TickTick_Roel_Frans\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_quit.xnb</Output>
       <Time>2012-06-04T17:37:54+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>

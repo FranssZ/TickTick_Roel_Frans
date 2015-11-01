@@ -8,7 +8,8 @@ public abstract class GameObject : IGameLoopObject
     protected Vector2 position, velocity;
     protected int layer;
     protected string id;
-    protected bool visible;
+    protected bool visible,meebewegen = false;
+    
 
     public GameObject(int layer = 0, string id = "")
     {
