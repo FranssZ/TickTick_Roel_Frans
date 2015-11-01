@@ -41,5 +41,6 @@ partial class Level : GameObjectList
         base.Reset();
         VisibilityTimer hintTimer = this.Find("hintTimer") as VisibilityTimer;
         hintTimer.StartVisible();
+        GameEnvironment.camera.camerapositie = new Vector2(0, 0);
     }
 }

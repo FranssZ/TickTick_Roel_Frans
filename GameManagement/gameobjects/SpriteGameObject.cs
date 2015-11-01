@@ -31,7 +31,8 @@ public class SpriteGameObject : GameObject
             return;
 
         cameraposition = GameEnvironment.camerapositieGE;
-        if (meebewegen) { cameraposition = new Vector2(0, 0); }
+        if (meebewegen) { cameraposition = new Vector2(0, 0); } //checkt of het object moet meebewegen of niet(buttons enzo niet)
+        if (layer != 0) { cameraposition = cameraposition/layer; } //verschillende layers hebben verschillende snelheden
         sprite.Draw(spriteBatch, this.GlobalPosition + cameraposition, origin);
     }
 
